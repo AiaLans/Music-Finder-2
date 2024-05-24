@@ -342,7 +342,7 @@ function addAlbumToDOM(album) {
 }
 
 // Event listeners
-submit.addEventListener('click', searchMusic);
+submit.addEventListener('submit', searchMusic);
 random.addEventListener('click', getRandomMusic);
 
 musicsEl.addEventListener('click', e => {
