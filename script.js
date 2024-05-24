@@ -283,7 +283,7 @@ function searchMusic(e) {
   // Check for empty
   if (term.trim()) {
     resultHeading.innerHTML = `<h2>Search results for '${term}':</h2>`;
-    const filteredAlbums = jsonData.album.filter(album => album.strArtist.toLowerCase().includes(term));
+    const filteredAlbums = jsonData.album.filter(album => album.strAlbum.toLowerCase().includes(term));
 
     if (filteredAlbums.length === 0) {
       resultHeading.innerHTML = `<p>There are no search results. Try again!<p>`;
